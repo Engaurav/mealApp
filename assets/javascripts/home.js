@@ -14,8 +14,8 @@ fetch('../assets/data/data.json')
 function breakfastList(breakfastData) {
     var breakfastMeal = document.getElementById("breakfast");
 
-    breakfastData.map((data) => {
-        let mealItem = "<div class='breakfast-item-container'><a href='#' class='meal-item-link'><img class='meal-item-img' src="+ data.img +" /><div class='meal-item-name'>"+ data.name +"</div><p class='meal-item-detail'>"+ data.detail +"</p></a></div>";
+    breakfastData.map((data,index) => {
+        let mealItem = "<div class='breakfast-item-container'><a href='/html/singleItem.html?meal=breakfast&index="+index+"' class='meal-item-link'><img class='meal-item-img' src="+ data.img +" /><div class='meal-item-name'>"+ data.name +"</div><p class='meal-item-detail'>"+ data.detail +"</p></a></div>";
         breakfastMeal.innerHTML += mealItem;
     });
 }
@@ -46,8 +46,8 @@ function breakfastPrevious() {
 function lunchList(lunchData) {
     var lunchMeal = document.getElementById("lunch");
 
-    lunchData.map((data) => {
-        let mealItem = "<div class='lunch-item-container'><a href='#' class='meal-item-link'><img class='meal-item-img' src="+ data.img +" /><div class='meal-item-name'>"+ data.name +"</div><p class='meal-item-detail'>"+ data.detail +"</p></a></div>";
+    lunchData.map((data,index) => {
+        let mealItem = "<div class='lunch-item-container'><a href='/html/singleItem.html?meal=lunch&index="+index+"' class='meal-item-link'><img class='meal-item-img' src="+ data.img +" /><div class='meal-item-name'>"+ data.name +"</div><p class='meal-item-detail'>"+ data.detail +"</p></a></div>";
         lunchMeal.innerHTML += mealItem;
     });
 }
