@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&family=Roboto+Flex:opsz,wght@8..144,300&display=swap");
+body {
+    margin: 0;
+}
+
+/* Start : CSS for Navbar */
+#navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Barlow Condensed", sans-serif;
+    box-shadow: 19px 15px 10px -23px #111;
+}
+
+/* CSS for brand information  : Start*/
+#brand-info {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 202px; */
+}
+
+#brand-info-link{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 202px;
+    text-decoration: none;
+}
+
+/* css for brand name */
+#brand-name {
+    font-size: x-large;
+    font-weight: bolder;
+    color: #85a93f;
+    align-self: center;
+}
+
+/* CSS for logo */
+#logo-img {
+    width: 90px;
+}
+
+/* CSS for brand information  : End*/
+
+
+/* CSS for NavLinks : Start */
+#navlinks-container {
+    display: flex;
+    width: 430px;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-weight: bold;
+    font-size: x-large;
+    align-self: center;
+    color: #47152c;
+}
+.navlink{
+    text-decoration: none;
+    color: #f5931f;
+    font-size: larger;
+}
+.navlink:hover{
+    color: #85a93f;
+}
+.navlink:active{
+    color: green;
+}
+
+/* CSS for NavLinks : End */
