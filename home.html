@@ -30,8 +30,8 @@
         <div id="navlinks-container">
             <!--Start: Navbar Links for Webpage -->
             <div id="home"><a class="navlink" href="/home.html">Home</a></div>
-            <div id="morning"><a class="navlink" href="#">Breakfast</a></div>
-            <div id="lunch"><a class="navlink" href="#">Lunch</a></div>
+            <div id="morning"><a class="navlink" href="#breakfast">Breakfast</a></div>
+            <div id="afternoon"><a class="navlink" href="#lunch">Lunch</a></div>
             <div id="dinner"><a class="navlink" href="#">Dinner</a></div>
             <div id="About"><a class="navlink" href="#">About</a></div>
             <!--End: Navbar Link for Webpage  -->
@@ -56,60 +56,50 @@
            <h1><a href="#" class="meal-time">Breakfast</a></h1>
            <div class="meal-time-food-list" id="breakfast">
                 <!-- Single Meal Item Container -->
-                <div class="meal-item-container">
+                <!-- <div class="breakfast-item-container">
                     <a href="#" class="meal-item-link">
                         <img class="meal-item-img" src="./assets/images/breakfast/b1.jpg" />
                         <div class="meal-item-name">Pasta in White Sauce</div>
                         <p class="meal-item-detail">Alfredo Pasta, Indian Style | Kiddie Lunch-box Special</p>
                     </a>
-                </div>
-                <!-- Single Meal Item Container -->
-                <div class="meal-item-container">
-                    <a href="#" class="meal-item-link">
-                        <img class="meal-item-img" src="./assets/images/breakfast/b1.jpg" />
-                        <div class="meal-item-name">Pasta in White Sauce</div>
-                        <p class="meal-item-detail">Alfredo Pasta, Indian Style | Kiddie Lunch-box Special</p>
-                    </a>
-                </div>
-                <!-- Single Meal Item Container -->
-                <div class="meal-item-container">
-                    <a href="#" class="meal-item-link">
-                        <img class="meal-item-img" src="./assets/images/breakfast/b1.jpg" />
-                        <div class="meal-item-name">Pasta in White Sauce</div>
-                        <p class="meal-item-detail">Alfredo Pasta, Indian Style | Kiddie Lunch-box Special</p>
-                    </a>
-                </div>
-                <!-- Single Meal Item Container -->
-                <div class="meal-item-container">
-                    <a href="#" class="meal-item-link">
-                        <img class="meal-item-img" src="./assets/images/breakfast/b1.jpg" />
-                        <div class="meal-item-name">Pasta in White Sauce</div>
-                        <p class="meal-item-detail">Alfredo Pasta, Indian Style | Kiddie Lunch-box Special</p>
-                    </a>
-                </div>
-                <!-- Single Meal Item Container -->
-                <div class="meal-item-container">
-                    <a href="#" class="meal-item-link">
-                        <img class="meal-item-img" src="./assets/images/breakfast/b1.jpg" />
-                        <div class="meal-item-name">Pasta in White Sauce</div>
-                        <p class="meal-item-detail">Alfredo Pasta, Indian Style | Kiddie Lunch-box Special</p>
-                    </a>
-                </div>
-                <!-- Single Meal Item Container -->
-                <div class="meal-item-container">
-                    <a href="#" class="meal-item-link">
-                        <img class="meal-item-img" src="./assets/images/breakfast/b1.jpg" />
-                        <div class="meal-item-name">Pasta in White Sauce</div>
-                        <p class="meal-item-detail">Alfredo Pasta, Indian Style | Kiddie Lunch-box Special</p>
-                    </a>
-                </div>
+                </div> -->
            </div>
-           <button class="meal-button-right">></button>
-           <button class="meal-button-left"><</button>
+
+           <!-- Button to get next meal item -->
+           <button class="meal-button-right" onclick="breakfastNext()">></button>
+          
+            <!-- Button to get previous meal item -->
+           <button class="meal-button-left" onclick="breakfastPrevious()"><</button>
        </div>
+
+
+        <!-- Lunch Meal Container  -->
+       <div class="meal-time-container">
+           <h1><a href="#" class="meal-time">Lunch</a></h1>
+           <div class="meal-time-food-list" id="lunch">
+                <!-- Single Meal Item Container -->
+                <!-- <div class="lunch-item-container">
+                    <a href="#" class="meal-item-link">
+                        <img class="meal-item-img" src="./assets/images/lunch/l1.jpg" />
+                        <div class="meal-item-name">Pasta in White Sauce</div>
+                        <p class="meal-item-detail">Alfredo Pasta, Indian Style | Kiddie Lunch-box Special</p>
+                    </a>
+                </div> -->
+           </div>
+
+           <!-- Button to get next meal item -->
+           <button class="meal-button-right" onclick="lunchNext()">></button>
+          
+            <!-- Button to get previous meal item -->
+           <button class="meal-button-left" onclick="lunchPrevious()"><</button>
+       </div>
+
+
+    
 
     </div>
 
 
+    <script type="text/javascript" src="./assets/javascripts/home.js"></script>
 </body>
 </html>

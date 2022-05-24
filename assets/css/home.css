@@ -79,7 +79,17 @@
 
 /* Start : CSS For Meal Item Container  */
 
-.meal-item-container{
+.breakfast-item-container{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 17px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    transition: ease-in-out 0.5s;
+}
+.lunch-item-container{
     display: inline-block;
     width: 300px;
     height: 300px;
