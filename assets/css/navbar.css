@@ -13,12 +13,12 @@ body {
 }
 
 /* CSS for brand information  : Start*/
-#brand-info {
-    /* display: flex;
+/* #brand-info {
+    display: flex;
     flex-direction: row;
     justify-content: space-evenly;
-    width: 202px; */
-}
+    width: 202px;
+} */
 
 #brand-info-link{
     display: flex;
