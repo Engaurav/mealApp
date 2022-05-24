@@ -6,10 +6,15 @@ body {
 /* Start : CSS for Navbar */
 #navbar {
     display: flex;
+    top: 0;
     flex-direction: row;
+    background: white;
+    position: fixed;
     justify-content: space-between;
     font-family: "Barlow Condensed", sans-serif;
     box-shadow: 19px 15px 10px -23px #111;
+    width: 100%;
+    z-index: 999;
 }
 
 /* CSS for brand information  : Start*/

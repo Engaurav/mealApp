@@ -20,6 +20,9 @@
 .meal-time-container{
     margin: 27px;
     margin-top: 40px;
+    width: 95%;
+    position: relative;
+    overflow: hidden;
 }
 .meal-time{
     text-decoration: none;
@@ -30,6 +33,92 @@
 .meal-time:hover{
     color: #85a93f;
 }
+.meal-time-food-list{
+    height: 350px;
+    width: 120%;
+    position: relative;
+    overflow: hidden;
+    padding-left: 25px;
+    padding-right: 25px;
+}
 
+
+.meal-button-right{
+    position: absolute;
+    top: 222px;
+    right: 0;
+    font-size: xxx-large;
+    background: #85a93f;
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+
+
+.meal-button-left{
+    position: absolute;
+    top: 222px;
+    left: 0;
+    font-size: xxx-large;
+    background: #85a93f;
+    border: none;
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    color: white;
+    cursor: pointer;
+}
+.meal-button-left:hover,.meal-button-right:hover{
+    background: #f5931f;
+}
 
 /* Css for meal Container : End */
+
+/* Start : CSS For Meal Item Container  */
+
+.meal-item-container{
+    display: inline-block;
+    width: 300px;
+    height: 300px;
+    margin: 17px;
+    border-radius: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    overflow: hidden;
+    transition: ease-in-out 0.5s;
+}
+
+/* OnHover over main Container  */
+.meal-item-container:hover{
+    transform: scale(1.05);
+}
+.meal-item-container:hover .meal-item-name{
+    color: orangered;
+}
+
+/* meal item container anchor tag css */
+.meal-item-link{
+    text-decoration: none;
+}
+
+/* meal item image css */
+.meal-item-img{
+    width: 300px;
+}
+
+/* meal item name css */
+.meal-item-name{
+    color: black;
+    font-size: x-large;
+    margin: 12px;
+}
+
+/* meal item detail css */
+.meal-item-detail{
+    color: #423e3e;
+    margin: 12px;
+}
+
+/* End : CSS For Meal Item Container  */
