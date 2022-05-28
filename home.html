@@ -1,105 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="./assets/images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="./assets/css/navbar.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/home.css" />
     <title>Meal</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Start : Navbar -->
     <nav id="navbar">
-        <!--Logo for meal app  -->
-        <div id="brand-info">
+      <!--Logo for meal app  -->
+      <div id="brand-info">
+        <!-- Using a tag to route over home page -->
+        <a id="brand-info-link" href="./home.html">
+          <div id="logo">
+            <img id="logo-img" src="./assets/images/logo.png" alt="logo" />
+          </div>
 
-            <!-- Using a tag to route over home page -->
-            <a id="brand-info-link" href="/home.html">
-                <div id="logo">
-                    <img id="logo-img" src="./assets/images/logo.png" alt="logo" />
-                </div>
+          <!--brand namme for meal app  -->
+          <div id="brand-name">24hrs-Meals</div>
+        </a>
+      </div>
 
-                <!--brand namme for meal app  -->
-                <div id="brand-name">24hrs-Meals</div>
-            </a>
+      <div id="navlinks-container">
+        <!--Start: Navbar Links for Webpage -->
+        <div id="home"><a class="navlink" href="./home.html">Home</a></div>
+        <div id="morning">
+          <a class="navlink" href="/html/favouriteMeal.html">Favourite</a>
         </div>
-
-        <div id="navlinks-container">
-            <!--Start: Navbar Links for Webpage -->
-            <div id="home"><a class="navlink" href="/home.html">Home</a></div>
-            <div id="morning"><a class="navlink" href="#breakfast">Breakfast</a></div>
-            <div id="afternoon"><a class="navlink" href="#lunch">Lunch</a></div>
-            <div id="dinner"><a class="navlink" href="#">Dinner</a></div>
-            <div id="About"><a class="navlink" href="#">About</a></div>
-            <!--End: Navbar Link for Webpage  -->
-        </div>
+        <!-- <div id="afternoon"><a class="navlink" href="#lunch">Lunch</a></div>
+        <div id="dinner"><a class="navlink" href="#">Dinner</a></div> -->
+        <div id="About"><a class="navlink" href="#">About</a></div>
+        <!--End: Navbar Link for Webpage  -->
+      </div>
     </nav>
     <!-- End : Navbar -->
 
     <!-- Start: Main Container -->
     <div id="main-container">
+      <!-- video container autoplay -->
+      <div id="meal-video-container">
+        <video id="meal-video" autoplay muted loop>
+          <source src="./assets/video/home.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
 
-        <!-- video container autoplay -->
-        <div id="meal-video-container">
-            <video id="meal-video" autoplay loop>
-                <source src="./assets/video/home.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
-
-
-        <!-- Breakfast Meal Container  -->
-       <div class="meal-time-container">
-           <h1><a href="#" class="meal-time">Breakfast</a></h1>
-           <div class="meal-time-food-list" id="breakfast">
-                <!-- Single Meal Item Container -->
-                <!-- <div class="breakfast-item-container">
+      <!-- Breakfast Meal Container  -->
+      <div class="meal-time-container">
+        <h1><a href="#" class="meal-time">Breakfast</a></h1>
+        <div class="meal-time-food-list" id="breakfast">
+          <!-- Single Meal Item Container -->
+          <!-- <div class="breakfast-item-container">
                     <a href="#" class="meal-item-link">
                         <img class="meal-item-img" src="./assets/images/breakfast/b1.jpg" />
                         <div class="meal-item-name">Pasta in White Sauce</div>
                         <p class="meal-item-detail">Alfredo Pasta, Indian Style | Kiddie Lunch-box Special</p>
                     </a>
+                    <div id="fav-unfav">
+                        <button class="fav">Favourite</button> -->
+                        <!-- <button class="unfav">Unfavourite</button> -->
+                    <!-- </div>
                 </div> -->
-           </div>
+        </div>
 
-           <!-- Button to get next meal item -->
-           <button class="meal-button-right" onclick="breakfastNext()">></button>
-          
-            <!-- Button to get previous meal item -->
-           <button class="meal-button-left" onclick="breakfastPrevious()"><</button>
-       </div>
+        <!-- Button to get next meal item -->
+        <button class="meal-button-right" onclick="breakfastNext()">></button>
 
+        <!-- Button to get previous meal item -->
+        <button class="meal-button-left" onclick="breakfastPrevious()">
+          <
+        </button>
+      </div>
 
-        <!-- Lunch Meal Container  -->
-       <div class="meal-time-container">
-           <h1><a href="#" class="meal-time">Lunch</a></h1>
-           <div class="meal-time-food-list" id="lunch">
-                <!-- Single Meal Item Container -->
-                <!-- <div class="lunch-item-container">
+      <!-- Lunch Meal Container  -->
+      <div class="meal-time-container">
+        <h1><a href="#" class="meal-time">Lunch</a></h1>
+        <div class="meal-time-food-list" id="lunch">
+          <!-- Single Meal Item Container -->
+          <!-- <div class="lunch-item-container">
                     <a href="#" class="meal-item-link">
                         <img class="meal-item-img" src="./assets/images/lunch/l1.jpg" />
                         <div class="meal-item-name">Pasta in White Sauce</div>
                         <p class="meal-item-detail">Alfredo Pasta, Indian Style | Kiddie Lunch-box Special</p>
                     </a>
                 </div> -->
-           </div>
+        </div>
 
-           <!-- Button to get next meal item -->
-           <button class="meal-button-right" onclick="lunchNext()">></button>
-          
-            <!-- Button to get previous meal item -->
-           <button class="meal-button-left" onclick="lunchPrevious()"><</button>
-       </div>
+        <!-- Button to get next meal item -->
+        <button class="meal-button-right" onclick="lunchNext()">></button>
 
-
-    
-
+        <!-- Button to get previous meal item -->
+        <button class="meal-button-left" onclick="lunchPrevious()"><</button>
+      </div>
     </div>
 
-
     <script type="text/javascript" src="./assets/javascripts/home.js"></script>
-</body>
+  </body>
 </html>
