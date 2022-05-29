@@ -2,13 +2,10 @@
 #main-container{
     margin: 50px;
     margin-top: 160px;
-    position: relative;
 }
 
 /* CSS for Main : Start */
 #main{
-    position: absolute;
-    float: left;
     width: 67%;
 }
 
@@ -51,10 +48,11 @@
 /* CSS for Aside : Start */
 
 #aside{
-    position: relative;
+    position: absolute;
     height: 300px;
+    right: 0;
+    top: 104px;
     width: 30%;
-    float: right;
 }
 #other-recipe{
     padding: 10px;
