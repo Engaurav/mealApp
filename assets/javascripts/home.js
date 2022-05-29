@@ -151,3 +151,4 @@ function makeUnfavourite(meal, index) {
 }
 
 // JavaScript to Handle Favourite unfav of Meal : Emd
+

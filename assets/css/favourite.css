@@ -49,6 +49,8 @@
 .meal-item-link {
   text-decoration: none;
   width: inherit;
+  min-height: 261px;
+  display: block;
 }
 
 /* meal item image css */
