@@ -1,4 +1,4 @@
-fetch("../assets/data/data.json")
+fetch("https://engaurav.github.io/mealApp/assets/data/data.json")
   .then((response) => {
     return response.json();
   })
