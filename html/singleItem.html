@@ -1,49 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" href="../assets/images/logo.png" type="image/x-icon" />
     <link rel="stylesheet" type="text/css" href="../assets/css/navbar.css" />
-    <link rel="stylesheet" type="text/css" href="../assets/css/singleItem.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="../assets/css/singleItem.css"
+    />
     <link rel="stylesheet" type="text/css" href="../assets/css/footer.css" />
     <title>Meal</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- Start : Navbar -->
     <nav id="navbar">
-        <!--Logo for meal app  -->
-        <div id="brand-info">
+      <!--Logo for meal app  -->
+      <div id="brand-info">
+        <!-- Using a tag to route over home page -->
+        <a id="brand-info-link" href="./index.html">
+          <div id="logo">
+            <img id="logo-img" src="../assets/images/logo.png" alt="logo" />
+          </div>
 
-            <!-- Using a tag to route over home page -->
-            <a id="brand-info-link" href="/index.html">
-                <div id="logo">
-                    <img id="logo-img" src="../assets/images/logo.png" alt="logo" />
-                </div>
+          <!--brand namme for meal app  -->
+          <div id="brand-name">24hrs-Meals</div>
+        </a>
+      </div>
 
-                <!--brand namme for meal app  -->
-                <div id="brand-name">24hrs-Meals</div>
-            </a>
+      <div id="navlinks-container">
+        <!--Start: Navbar Links for Webpage -->
+        <div id="home"><a class="navlink" href="./index.html">Home</a></div>
+        <div id="morning">
+          <a class="navlink" href="./html/favouriteMeal.html">Favourite</a>
         </div>
-
-        <div id="navlinks-container">
-            <!--Start: Navbar Links for Webpage -->
-            <div id="home"><a class="navlink" href="/index.html">Home</a></div>
-            <div id="morning"><a class="navlink" href="/html/favouriteMeal.html">Favourite</a></div>
-            <div id="About"><a class="navlink" href="#about">About</a></div>
-            <!--End: Navbar Link for Webpage  -->
-        </div>
+        <div id="About"><a class="navlink" href="#about">About</a></div>
+        <!--End: Navbar Link for Webpage  -->
+      </div>
     </nav>
     <!-- End : Navbar -->
 
     <!-- Start: Main Container -->
     <div id="main-container">
+      <!-- We will add main container dynamically through javascripts -->
 
-        <!-- We will add main container dynamically through javascripts -->
-
-       <div id="main">
+      <div id="main">
         <!--   <h1 id="meal-item-name">Baked Khichdi Recipe</h1>
             <h3 id="meal-item-detail">Rice Casserole | One Pot Recipe Challenge</h3>
             <img id="meal-item-image" src="../assets/images/breakfast/b1.jpg">
@@ -84,52 +87,58 @@
                     </li>
                 </ul>
             </div>-->
-
-        </div> 
-        <div id="aside">
-            <div id="other-recipe">
-                <h2>Other Recipe </h2>
-                <a href=""><h3>Baked Khichdi Recipe / Rice Casserole | One Pot Recipe Challenge
-                </h3></a>
-                <a href=""><h3>Atta Cake Recipe in Pressure Cooker | No Sugar Added, Naturally sweet | Eggless Baking Without Oven</h3></a>
-            </div>
+      </div>
+      <div id="aside">
+        <div id="other-recipe">
+          <h2>Other Recipe</h2>
+          <a href=""
+            ><h3>
+              Baked Khichdi Recipe / Rice Casserole | One Pot Recipe Challenge
+            </h3></a
+          >
+          <a href=""
+            ><h3>
+              Atta Cake Recipe in Pressure Cooker | No Sugar Added, Naturally
+              sweet | Eggless Baking Without Oven
+            </h3></a
+          >
         </div>
-
-
+      </div>
     </div>
 
-     <!-- Footer Section has about details: Start -->
-     <footer id="about">
-        <div id="footer-container">
-          <div>
-            <h1>About</h1>
-            <p>
-              This is Meal Recepie WebSite to give information about steps to
-              create diffrent types of reciepe. You can add your favourtite meal
-              by click on favourite on particular meal. You can also search for
-              meals in out website.
-            </p>
-          </div>
-          <div>
-            <div id="details">
-              <h1>Details</h1>
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/545/545245.png"
-                width="15px"
-              /><span class="detail-list">+91-9169770000</span><br />
-              <img
-                src="https://cdn-icons-png.flaticon.com/512/546/546394.png"
-                width="15px"
-              /><span class="detail-list">gaurav.singh323@gmail.com</span>
-            </div>
-          </div>
-          <div>&copy; Created By Gaurav Singh</div>
+    <!-- Footer Section has about details: Start -->
+    <footer id="about">
+      <div id="footer-container">
+        <div>
+          <h1>About</h1>
+          <p>
+            This is Meal Recepie WebSite to give information about steps to
+            create diffrent types of reciepe. You can add your favourtite meal
+            by click on favourite on particular meal. You can also search for
+            meals in out website.
+          </p>
         </div>
-      </footer>
-      <!-- Footer Section has about details: End -->
-      
+        <div>
+          <div id="details">
+            <h1>Details</h1>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/545/545245.png"
+              width="15px"
+            /><span class="detail-list">+91-9169770000</span><br />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/546/546394.png"
+              width="15px"
+            /><span class="detail-list">gaurav.singh323@gmail.com</span>
+          </div>
+        </div>
+        <div>&copy; Created By Gaurav Singh</div>
+      </div>
+    </footer>
+    <!-- Footer Section has about details: End -->
 
-
-    <script type="text/javascript" src="../assets/javascripts/singleItem.js"></script>
-</body>
+    <script
+      type="text/javascript"
+      src="../assets/javascripts/singleItem.js"
+    ></script>
+  </body>
 </html>
