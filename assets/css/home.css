@@ -93,6 +93,15 @@
   overflow: hidden;
   transition: ease-in-out 0.5s;
 }
+.dinner-item-container {
+  display: inline-block;
+  width: 300px;
+  margin: 17px;
+  border-radius: 20px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  overflow: hidden;
+  transition: ease-in-out 0.5s;
+}
 
 /* OnHover over main Container  */
 .breakfast-item-container:hover {
@@ -105,6 +114,12 @@
   transform: scale(1.05);
 }
 .lunch-item-container:hover .meal-item-name {
+  color: orangered;
+}
+.dinner-item-container:hover {
+  transform: scale(1.05);
+}
+.dinner-item-container:hover .meal-item-name {
   color: orangered;
 }
 

@@ -16,7 +16,7 @@
       <!--Logo for meal app  -->
       <div id="brand-info">
         <!-- Using a tag to route over home page -->
-        <a id="brand-info-link" href="./index.html">
+        <a id="brand-info-link" href="/">
           <div id="logo">
             <img id="logo-img" src="./assets/images/logo.png" alt="logo" />
           </div>
@@ -33,7 +33,7 @@
       </div>
       <div id="navlinks-container">
         <!--Start: Navbar Links for Webpage -->
-        <div id="home"><a class="navlink" href="./index.html">Home</a></div>
+        <div id="home"><a class="navlink" href="/">Home</a></div>
         <div id="morning">
           <a class="navlink" href="./html/favouriteMeal.html">Favourite</a>
         </div>
@@ -99,6 +99,31 @@
 
         <!-- Button to get previous meal item -->
         <button class="meal-button-left" onclick="lunchPrevious()"><</button>
+      </div>
+
+      <!-- Dinner Meal Container  -->
+      <div class="meal-time-container">
+        <h1><a href="#" class="meal-time">Dinner</a></h1>
+        <div class="meal-time-food-list" id="dinner">
+          <!-- Single Meal Item Container -->
+          <!-- <div class="breakfast-item-container">
+                    <a href="#" class="meal-item-link">
+                        <img class="meal-item-img" src="./assets/images/breakfast/b1.jpg" />
+                        <div class="meal-item-name">Pasta in White Sauce</div>
+                        <p class="meal-item-detail">Alfredo Pasta, Indian Style | Kiddie Lunch-box Special</p>
+                    </a>
+                    <div id="fav-unfav">
+                        <button class="fav">Favourite</button> -->
+          <!-- <button class="unfav">Unfavourite</button> -->
+          <!-- </div>
+                </div> -->
+        </div>
+
+        <!-- Button to get next meal item -->
+        <button class="meal-button-right" onclick="dinnerNext()">></button>
+
+        <!-- Button to get previous meal item -->
+        <button class="meal-button-left" onclick="dinnerPrevious()"><</button>
       </div>
     </div>
 

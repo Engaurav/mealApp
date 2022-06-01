@@ -8,6 +8,7 @@ fetch("https://engaurav.github.io/mealApp/assets/data/data.json")
     //
     breakfastList(data.breakfast); //calling breakFast list funtion to render list breakfast item
     lunchList(data.lunch); //calling lunch list funtion to render list lunch item
+    dinnerList(data.dinner); //calling lunch list funtion to render list lunch item
   }, true);
 
 //javascript for breakfast meal : START
@@ -123,6 +124,62 @@ function lunchPrevious() {
 
 //javascript for lunch meal : End
 
+// JavaScript for Dinner : Start
+function dinnerList(dinnerData) {
+  var dinnerMeal = document.getElementById("dinner");
+  let dinnerfastFavList = window.localStorage.getItem("dinner");
+  if (dinnerfastFavList) {
+    dinnerfastFavList = JSON.parse(dinnerfastFavList);
+  } else {
+    dinnerfastFavList = [];
+  }
+  let meall = "dinner";
+  dinnerData.map((data, index) => {
+    let mealItem = ` <div class="dinner-item-container">
+    <a href="./html/singleItem.html?meal=dinner&index=${index}" class="meal-item-link">
+        <img class="meal-item-img" src="${data.img}" />
+        <div class="meal-item-name">${data.name}</div>
+        <p class="meal-item-detail">${data.detail}</p>
+    </a>
+    <div id="fav-unfav">
+        ${
+          dinnerfastFavList.includes(index)
+            ? "<button class='unfav' onclick='makeUnfavourite(" +
+              JSON.stringify(meall) +
+              "," +
+              index +
+              ")'>Unfavourite</button>"
+            : "<button class='fav' onclick='makeFavourite(" +
+              JSON.stringify(meall) +
+              "," +
+              index +
+              ")'>Favourite</button>"
+        }
+        <!--<button class="fav" onclick="makeFavourite('dinner',${index})">Favourite</button> -->
+        <!-- <button class="unfav">Unfavourite</button> -->
+    </div>
+</div>`;
+    dinnerMeal.innerHTML += mealItem;
+  });
+}
+
+// function for next food item of dinner
+function dinnerNext() {
+  var dinnerMeal = document.getElementById("dinner");
+  var breakItem = document.getElementsByClassName("dinner-item-container");
+
+  dinnerMeal.append(breakItem[0]);
+}
+
+// function for previous food item of dinner
+function dinnerPrevious() {
+  var dinnerMeal = document.getElementById("dinner");
+  var breakItem = document.getElementsByClassName("dinner-item-container");
+  dinnerMeal.prepend(breakItem[breakItem.length - 1]);
+}
+
+// JavaScript for Dinner : End
+
 // JavaScript to Handle Favourite unfav of Meal : Start
 function makeFavourite(meal, index) {
   //   console.log("meal", meal);
@@ -151,4 +208,3 @@ function makeUnfavourite(meal, index) {
 }
 
 // JavaScript to Handle Favourite unfav of Meal : Emd
-
