@@ -61,13 +61,14 @@ body {
   height: 30px;
 }
 #search-display {
-    position: absolute;
-    background: white;
-    border-radius: 5px;
-    display: none;
-    width: 150%;
-    max-height: 150px;
-    overflow: auto;
+  position: absolute;
+  background: white;
+  border-radius: 5px;
+  display: none;
+  width: 150%;
+  max-height: 150px;
+  overflow: auto;
+  z-index: 1;
 }
 #search-display a {
   display: block;
@@ -107,5 +108,61 @@ body {
 .navlink:active {
   color: green;
 }
-
+#navbar-media {
+  height: 0;
+  transition: ease-in-out 0.1s;
+}
+#side-bar-button {
+  background: none;
+  border: none;
+  font-size: xx-large;
+  margin-right: 20px;
+  color: #85a93f;
+  cursor: pointer;
+  display: none;
+}
 /* CSS for NavLinks : End */
+
+/* Css for media width */
+@media only screen and (max-width: 930px) {
+  #side-bar-button {
+    display: block;
+  }
+  #search-container {
+    position: absolute;
+    top: 115px;
+    right: 125px;
+    display: none;
+  }
+  #navbar-media {
+    height: 0px;
+    width: 300px;
+    position: fixed;
+    z-index: 123;
+    right: 0;
+    background-image: linear-gradient(
+      to right,
+      rgb(255 255 255 / 89%),
+      rgb(255 255 255)
+    );
+    border-radius: 5px;
+    top: 10px;
+    border-left: solid 6px #85a93f;
+    border-bottom: solid 4px #f5931f;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #navlinks-container {
+    overflow: hidden;
+    height: 0px;
+    position: absolute;
+    top: 145px;
+    width: 300px;
+    right: 0;
+    flex-direction: column;
+    text-align: center;
+  }
+  #navlinks-container div {
+    margin: 10px;
+  }
+}

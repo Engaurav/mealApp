@@ -21,6 +21,8 @@
   position: relative;
   overflow: hidden;
 }
+
+
 .meal-time {
   text-decoration: none;
   color: #f5931f;
@@ -32,7 +34,7 @@
 }
 .meal-time-food-list {
   height: 350px;
-  width: 120%;
+  width: 150%;
   position: relative;
   overflow: hidden;
   padding-left: 25px;
@@ -184,3 +186,21 @@
 }
 
 /* Favourite UnFavourite Button CSS : End */
+
+
+/* CSS for Media Width max-width: 600px */
+@media only screen and (max-width: 600px) {
+  .meal-time-container {
+    margin: 10px;
+  }
+  .breakfast-item-container {
+    width: 266px;
+  }
+  .lunch-item-container {
+    width: 266px;
+  }
+  .dinner-item-container {
+    width: 266px;
+  }
+
+}
